@@ -1,0 +1,14 @@
+buildscript {
+    repositories {
+        maven { url "https://jitpack.io" }
+    }
+    dependencies {
+        classpath "com.github.marcphilipp.nexus-publish-plugin:de.marcphilipp.nexus-publish.gradle.plugin:6da8acc"
+    }
+}
+
+allprojects {
+    plugins.withId("maven-publish") {
+        project.apply plugin: 'de.marcphilipp.nexus-publish'
+    }
+}

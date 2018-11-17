@@ -1,0 +1,5 @@
+rootProject.name = 'nexus-publish-bug'
+
+enableFeaturePreview('STABLE_PUBLISHING')
+
+include "gradle-plugin"
